@@ -22,8 +22,10 @@ function deepestChild() {
   .querySelector('div#grand-node');
   var next = current
     .querySelectorAll('div');
+  var childArray = [];
   for (let i = 0; i < next.length; i++) {
-      const child = current.querySelector('div')[i];
+      var child = current.querySelector('div')[i];
+      childArray.push(child);
     }
-    return child.innerHTML;
+    return childArray[childArray.length].innerHTML;
 }
