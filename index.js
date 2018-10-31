@@ -26,5 +26,5 @@ function deepestChild() {
       var child = total.querySelector('div')[i].innerHTML;
       totalArray.unshift(child);
     }
-    return childArray[0];
+    return totalArray[0];
 }
