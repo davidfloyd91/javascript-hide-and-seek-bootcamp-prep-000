@@ -19,15 +19,15 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   var current = document
-  .querySelectorAll('div#grand-node');
+  .querySelector('div#grand-node');
+  var currentArray = [];
+  currentArray.push(current);
   var next = [];
   while (current) {
-  if (Array.isArray(current)) {
     for (let i = 0; i < current.length; i++) {
       next.push(current[i]);
     }
+    current = next.shift();
+    return innerHTML(current);
   }
-  current = next.shift();
-  return innerHTML(current);
-}
 }
