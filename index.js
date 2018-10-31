@@ -21,6 +21,7 @@ function deepestChild() {
   var current = document
   .querySelectorAll('div#grand-node');
   var next = [];
+  while (current) {
   if (Array.isArray(current)) {
     for (let i = 0; i < current.length; i++) {
       next.push(current[i]);
@@ -28,4 +29,5 @@ function deepestChild() {
   }
   current = next.shift();
   return innerHTML(current);
+}
 }
