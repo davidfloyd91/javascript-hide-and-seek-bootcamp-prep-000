@@ -16,9 +16,15 @@ function increaseRankBy(n) {
     getIt[i].innerHTML = parseInt(getIt[i].innerHTML) + 1;
   }
 }
-/*
-function deepestChild() {
-  var getIt2 = ;
 
+function deepestChild() {
+  var current = document
+  .querySelectorAll('div#grand-node');
+  var next = [];
+  if Array.isArray(current) {
+    for (let i = 0; i < current.length; i++) {
+      next.push(current[i]);
+    }
+  }
+  current = next.shift(); 
 }
-*/
