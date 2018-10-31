@@ -29,5 +29,5 @@ function deepestChild() {
   while (nextArray.length > 1) {
     nextArray.shift();
   }
-    return innerHTML(nextArray[0]);
+    return nextArray[0].innerHTML;
 }
