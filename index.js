@@ -23,7 +23,7 @@ function deepestChild() {
   .querySelectorAll('div');
   var totalArray = [];
   for (let i = 0; i < total.length; i++) {
-      var child = total.querySelector('div')[i].innerHTML;
+      var child = total[i].querySelector('div').innerHTML;
       totalArray.unshift(child);
     }
     return totalArray[0];
