@@ -1,9 +1,12 @@
 function getFirstSelector(selector) {
-    return document.querySelector(selector);
+    return document
+    .querySelector(selector);
 }
 
 function nestedTarget() {
-    return document.querySelector('#nested').querySelector('.target');
+    return document
+    .querySelector('#nested')
+    .querySelector('.target');
 }
 
 function increaseRankBy(n) {
@@ -12,4 +15,9 @@ function increaseRankBy(n) {
   for (let i = 0; i < getIt.length; i++) {
     getIt[i].innerHTML = parseInt(getIt[i].innerHTML) + 1;
   }
+}
+
+function deepestChild() {
+  var getIt2 = ;
+
 }
