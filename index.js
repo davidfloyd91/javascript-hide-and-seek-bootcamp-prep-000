@@ -27,5 +27,4 @@ function deepestChild() {
       .querySelector()[i];
     }
     return innerHTML(current);
-  }
 }
