@@ -26,5 +26,6 @@ function deepestChild() {
       next.push(current[i]);
     }
   }
-  current = next.shift(); 
+  current = next.shift();
+  return current;
 }
