@@ -18,13 +18,12 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  var total = document
+  var lis = document
   .querySelector('#grand-node')
   .querySelectorAll('div');
-  var totalArray = [];
-  for (let i = 0; i < total.length; i++) {
-      var child = total[i].querySelector('div').innerHTML;
-      totalArray.unshift(child);
+  var child;
+  for (let i = 0; i < lis.length - 1; i++) {
+    child = lis.querySelector('div')[i];
     }
-    return totalArray[0];
+  return count;
 }
