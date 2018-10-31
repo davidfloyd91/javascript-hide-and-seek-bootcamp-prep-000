@@ -25,7 +25,7 @@ function deepestChild() {
   var childArray = [];
   for (let i = 0; i < next.length; i++) {
       var child = current.querySelector('div')[i].innerHTML;
-      childArray.push(child);
+      childArray.unshift(child);
     }
-    return childArray[childArray.length];
+    return childArray[0];
 }
