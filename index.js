@@ -21,7 +21,7 @@ function deepestChild() {
   var current = document
   .querySelectorAll('div#grand-node');
   var next = [];
-  if Array.isArray(current) {
+  if (Array.isArray(current)) {
     for (let i = 0; i < current.length; i++) {
       next.push(current[i]);
     }
