@@ -16,8 +16,9 @@ function increaseRankBy(n) {
     getIt[i].innerHTML = parseInt(getIt[i].innerHTML) + 1;
   }
 }
-
+/*
 function deepestChild() {
   var getIt2 = ;
 
 }
+*/
